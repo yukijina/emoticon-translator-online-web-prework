@@ -19,7 +19,7 @@ def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
   emoticons = load_library(file_path = './lib/emoticons.yml')
   
   if emoticons["get_emoticon"].include?(english_emoticon)
-     emoticons["get_emoticon"].values
+     emoticons["get_emoticon"][english_emoticon]
   end  
   
 end
